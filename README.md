@@ -2,10 +2,14 @@
 
 Bitcoin Core RPC client version v0.10.0.0-g047a898
 
+
 Usage:
   bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
+  
   bitcoin-cli [options] help                List commands
+  
   bitcoin-cli [options] help <command>      Get help for a command
+  
 
 Options:
   -?                     This help message
