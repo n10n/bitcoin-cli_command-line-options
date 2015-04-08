@@ -8,19 +8,19 @@
   - bitcoin-cli [options] help <command>      Get help for a command
 
 - Options:
-  -?                     This help message
-  -conf=<file>           Specify configuration file (default: bitcoin.conf)
-  -datadir=<dir>         Specify data directory
-  -testnet               Use the test network
-  -regtest               Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app deelopment.
-  -rpcconnect=<ip>       Send commands to node running on <ip> (default: 127.0.0.1)
-  -rpcport=<port>        Connect to JSON-RPC on <port> (default: 8332 or testnet: 18332)
-  -rpcwait               Wait for RPC server to start
-  -rpcuser=<user>        Username for JSON-RPC connections
-  -rpcpassword=<pw>      Password for JSON-RPC connections
+  - -?                     This help message
+  - -conf=<file>           Specify configuration file (default: bitcoin.conf)
+  - -datadir=<dir>         Specify data directory
+  - -testnet               Use the test network
+  - -regtest               Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app deelopment.
+  - -rpcconnect=<ip>       Send commands to node running on <ip> (default: 127.0.0.1)
+  - -rpcport=<port>        Connect to JSON-RPC on <port> (default: 8332 or testnet: 18332)
+  - -rpcwait               Wait for RPC server to start
+  - -rpcuser=<user>        Username for JSON-RPC connections
+  - -rpcpassword=<pw>      Password for JSON-RPC connections
 
 - SSL options: (see the Bitcoin Wiki for SSL setup instructions)
-  -rpcssl                Use OpenSSL (https) for JSON-RPC connections
+  - -rpcssl                Use OpenSSL (https) for JSON-RPC connections
   
 # bitcoin-cli help
 
