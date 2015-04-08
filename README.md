@@ -124,28 +124,3 @@ signmessage "bitcoinaddress" "message"
 
 
 ```
-
-
-# bitcoin.conf
-```
-rpcuser=SECRET-LIKE-LeNKRu2Ft10qu62pJ12J8p63Tc68LiQ3-BUT-DIFFERENT!
-rpcpassword=SECRET-ALSO-LIKE-7x8qLma42OFZRgfH8sMz6XGkS146h3FJ-BUT-DIFFERENT!
-rpcport=8332
-server=1
-maxconnections=120
-daemon=1
-txindex=0
-txconfirmtarget=1
-sendfreetransactions=0
-limitfreerelay=0
-mintxrelayfee=0.001
-listen=1
-port=8333
-onion=127.0.0.1:9150
-bind=0.0.0.0
-discover=1
-addnode=155.94.64.98:8333
-addnode=93.188.224.253:8333
-addnode=77.240.112.3:8333
-addnode=31.146.211.3:8333
-```
