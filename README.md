@@ -1,6 +1,6 @@
-# bitcoin-cli --help
+# Bitcoin Core RPC client version v0.10.0.0-g047a898
 
-- Bitcoin Core RPC client version v0.10.0.0-g047a898
+# bitcoin-cli --help
 
 - Usage:
   - bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
@@ -21,7 +21,7 @@
 
 - SSL options: (see the Bitcoin Wiki for SSL setup instructions)
   - -rpcssl                Use OpenSSL (https) for JSON-RPC connections
-  
+
 # bitcoin-cli help
 
 #### == Blockchain ==
