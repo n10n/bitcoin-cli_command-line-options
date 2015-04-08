@@ -5,20 +5,15 @@ Bitcoin Core RPC client version v0.10.0.0-g047a898
 
 Usage:
   bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
-  
   bitcoin-cli [options] help                List commands
-  
   bitcoin-cli [options] help <command>      Get help for a command
   
 
 Options:
 
   -?                     This help message
-  
   -conf=<file>           Specify configuration file (default: bitcoin.conf)
-  
   -datadir=<dir>         Specify data directory
-  
   -testnet               Use the test network
   -regtest               Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app deelopment.
   -rpcconnect=<ip>       Send commands to node running on <ip> (default: 127.0.0.1)
