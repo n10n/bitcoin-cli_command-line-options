@@ -12,9 +12,13 @@ Usage:
   
 
 Options:
+
   -?                     This help message
+  
   -conf=<file>           Specify configuration file (default: bitcoin.conf)
+  
   -datadir=<dir>         Specify data directory
+  
   -testnet               Use the test network
   -regtest               Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app deelopment.
   -rpcconnect=<ip>       Send commands to node running on <ip> (default: 127.0.0.1)
