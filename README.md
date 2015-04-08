@@ -1,16 +1,13 @@
 # bitcoin-cli --help
 
-Bitcoin Core RPC client version v0.10.0.0-g047a898
+- Bitcoin Core RPC client version v0.10.0.0-g047a898
 
+- Usage:
+  - bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
+  - bitcoin-cli [options] help                List commands
+  - bitcoin-cli [options] help <command>      Get help for a command
 
-Usage:
-  bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
-  bitcoin-cli [options] help                List commands
-  bitcoin-cli [options] help <command>      Get help for a command
-  
-
-Options:
-
+- Options:
   -?                     This help message
   -conf=<file>           Specify configuration file (default: bitcoin.conf)
   -datadir=<dir>         Specify data directory
@@ -22,7 +19,7 @@ Options:
   -rpcuser=<user>        Username for JSON-RPC connections
   -rpcpassword=<pw>      Password for JSON-RPC connections
 
-SSL options: (see the Bitcoin Wiki for SSL setup instructions)
+- SSL options: (see the Bitcoin Wiki for SSL setup instructions)
   -rpcssl                Use OpenSSL (https) for JSON-RPC connections
   
 # bitcoin-cli help
