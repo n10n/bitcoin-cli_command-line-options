@@ -1,11 +1,12 @@
-### bitcoin-cli command line options
-#### Bitcoin Core RPC client version v0.10.0.0-g047a898
+### bitcoin-cli and bitcoind command line options and help
 
-##### You may need to use 'sudo' to execute these help commands as shown
+##### You may need to use sudo to execute these help commands as shown
 ##### (eg, 'sudo bitcoin-cli --help')
 
 # bitcoin-cli --help
 ```
+Bitcoin Core RPC client version v0.10.0.0-g047a898
+
 Usage:
   bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
   bitcoin-cli [options] help                List commands
