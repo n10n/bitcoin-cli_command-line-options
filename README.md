@@ -70,7 +70,8 @@ decoderawtransaction "hexstring"
 decodescript "hex"
 getrawtransaction "txid" ( verbose )
 sendrawtransaction "hexstring" ( allowhighfees )
-signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )
+signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...]
+ighashtype )
 
 == Util ==
 createmultisig nrequired ["key",...]
