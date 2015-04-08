@@ -124,14 +124,32 @@
 #rpcsslcertificatechainfile=server.cert
 #rpcsslprivatekeyfile=server.pem
 
+# Bitcoin will stop relaying free transactions based on an exponential rate-limiting function, 
+# where more transactions in a shorter period of time are more likely to be dropped 
+# (and the default average is to allow about 150Kbytes over 10 minutes). 
+# limitfreerelay is KBytes/minute rate; default is 15.
+# <n> Continuously rate-limit free transactions to <n>*1000 bytes per minute (default:15)
+#limitfreerelay=15
+
+# Fees (in BTC/Kb) smaller than this are considered zero fee for relaying (default: 0.00001)
+#minrelaytxfee=0.001
+
+# Fees smaller than this are considered zero fee for transaction creation (default 0.00001)
+#mintxfee=0.001
+
 # Transaction Fee Changes in 0.10.0
 
 # Send transactions as zero-fee transactions if possible (default: 0)
 #sendfreetransactions=0
 
 # Create transactions that have enough fees (or priority) so they are likely to begin confirmation within n blocks (default: 1).
-# This setting is over-ridden by the -paytxfee option.
-#txconfirmtarget=n
+# This setting is over-ridden by the paytxfee option if set.
+#txconfirmtarget=1
+
+# Pay an optional transaction fee every time you send bitcoins.  Transactions with fees
+# are more likely than free transactions to be included in generated blocks, so may
+# be validated sooner.
+#paytxfee=0.001
 
 # Miscellaneous options
 
@@ -143,11 +161,6 @@
 # Default is 0, set to 1 if needed for services such as running an electrum-btc-server or block explorer
 #txindex=1
 
-# Pay an optional transaction fee every time you send bitcoins.  Transactions with fees
-# are more likely than free transactions to be included in generated blocks, so may
-# be validated sooner.
-#paytxfee=0.00
-
 # User interface options
 
 # Start Bitcoin minimized
@@ -156,16 +169,5 @@
 # Minimize to the system tray
 #minimizetotray=1
 
-# Bitcoin will stop relaying free transactions based on an exponential rate-limiting function, 
-# where more transactions in a shorter period of time are more likely to be dropped 
-# (and the default average is to allow about 150Kbytes over 10 minutes). 
-# limitfreerelay is KBytes/minute rate; default is 15.
-# <n> Continuously rate-limit free transactions to <n>*1000 bytes per minute (default:15)
-#limitfreerelay=15
 
-# Fees smaller than this are considered zero fee for relaying
-#minrelaytxfee=0.001
-
-# Fees smaller than this are considered zero fee for transaction creation
-#mintxfee=0.001
 
