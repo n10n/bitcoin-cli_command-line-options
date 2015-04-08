@@ -1,4 +1,6 @@
-## Bitcoin Core RPC client version v0.10.0.0-g047a898
+### Bitcoin Core RPC client version v0.10.0.0-g047a898
+
+## You may need to include 'sudo' to execute these help commands as shown (eg, 'sudo bitcoin-cli --help')
 
 # bitcoin-cli --help
 
