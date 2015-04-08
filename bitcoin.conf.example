@@ -156,9 +156,16 @@
 # Minimize to the system tray
 #minimizetotray=1
 
-# Limit Free Relay Transactions, set to 1 to disallow free transactions from peers being held in memory pool
-#limitfreerelay=0
+# Bitcoin will stop relaying free transactions based on an exponential rate-limiting function, 
+# where more transactions in a shorter period of time are more likely to be dropped 
+# (and the default average is to allow about 150Kbytes over 10 minutes). 
+# limitfreerelay is KBytes/minute rate; default is 15.
+# <n> Continuously rate-limit free transactions to <n>*1000 bytes per minute (default:15)
+#limitfreerelay=15
 
-# Minimum transaction fee necessary for a transaction to be held in our memory pool as relayed from our peers
-#mintxrelayfee=0.001
+# Fees smaller than this are considered zero fee for relaying
+#minrelaytxfee=0.001
+
+# Fees smaller than this are considered zero fee for transaction creation
+#mintxfee=0.001
 
