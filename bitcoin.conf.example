@@ -1,8 +1,19 @@
 ##
-## bitcoin.conf configuration file. Lines beginning with # are comments.
+## bitcoin.conf example configuration file.
+## Lines beginning with # are comments.
+## Remove # to activate the configuration feature.
 ##
- 
-# Network-related settings:
+
+# Run bitcoin-cli as a daemon
+#daemon=1
+
+## Network-related settings:
+
+# Have bitcoind discover available external ips to provide other nodes.
+#discover=1
+
+# Set the port which bitcoind will use to listen for incoming connections from other bitcoin nodes.
+#port=8333
 
 # Run on the test network instead of the real bitcoin network.
 #testnet=0
@@ -13,7 +24,12 @@
 # Connect via a SOCKS5 proxy
 #proxy=127.0.0.1:9050
 
+# Connect via a tor/onion proxy
+#onion=127.0.0.1:9150
+
 # Bind to given address and always listen on it. Use [host]:port notation for IPv6
+# Bind to all available addresses with 0.0.0.0
+#bind=0.0.0.0
 #bind=<addr>
 
 # Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6
@@ -42,9 +58,13 @@
 ##       Thanks goes to [Noodle] on Freenode.               ##
 ##############################################################
 
-# Use as many addnode= settings as you like to connect to specific peers
+# Use as many addnode= settings as you like to connect to specific peers.  Port is optional as needed.
 #addnode=69.164.218.197
 #addnode=10.0.0.2:8333
+#addnode=155.94.64.98:8333
+#addnode=93.188.224.253:8333
+#addnode=77.240.112.3:8333
+#addnode=31.146.211.3:8333
 
 # Alternatively use as many connect= settings as you like to connect ONLY to specific peers
 #connect=69.164.218.197
@@ -54,7 +74,7 @@
 #listen=1
 
 # Maximum number of inbound+outbound connections.
-#maxconnections=
+#maxconnections=120
 
 #
 # JSON-RPC options (for controlling a running Bitcoin/bitcoind process)
@@ -119,6 +139,10 @@
 # both prior transactions and several dozen future transactions.
 #keypool=100
 
+# Set the blockchain database to be searchable for historical transaction information.
+# Default is 0, set to 1 if needed for services such as running an electrum-btc-server or block explorer
+#txindex=1
+
 # Pay an optional transaction fee every time you send bitcoins.  Transactions with fees
 # are more likely than free transactions to be included in generated blocks, so may
 # be validated sooner.
@@ -131,3 +155,10 @@
 
 # Minimize to the system tray
 #minimizetotray=1
+
+# Limit Free Relay Transactions, set to 1 to disallow free transactions from peers being held in memory pool
+#limitfreerelay=0
+
+# Minimum transaction fee necessary for a transaction to be held in our memory pool as relayed from our peers
+#mintxrelayfee=0.001
+
