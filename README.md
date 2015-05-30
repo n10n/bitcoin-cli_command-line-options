@@ -5,7 +5,7 @@
 
 # bitcoin-cli --help
 ```
-Bitcoin Core RPC client version v0.10.0.0-g047a898
+Bitcoin Core RPC client version v0.10.2
 
 Usage:
   bitcoin-cli [options] <command> [params]  Send command to Bitcoin Core
@@ -126,7 +126,7 @@ signmessage "bitcoinaddress" "message"
 
 # bitcoind --help -help-debug
 ```
-Bitcoin Core Daemon version v0.10.0.0-g047a898
+Bitcoin Core Daemon version v0.10.2
 
 Usage:
   bitcoind [options]                     Start Bitcoin Core Daemon
@@ -140,10 +140,10 @@ Options:
   -conf=<file>           Specify configuration file (default: bitcoin.conf)
   -daemon                Run in the background as a daemon and accept commands
   -datadir=<dir>         Specify data directory
-  -dbcache=<n>           Set database cache size in megabytes (4 to 4096, default: 100)
+  -dbcache=<n>           Set database cache size in megabytes (4 to 1024, default: 100)
   -loadblock=<file>      Imports blocks from external blk000??.dat file on startup
   -maxorphantx=<n>       Keep at most <n> unconnectable transactions in memory (default: 100)
-  -par=<n>               Set the number of script verification threads (-1 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
+  -par=<n>               Set the number of script verification threads (-2 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
   -pid=<file>            Specify pid file (default: bitcoind.pid)
   -reindex               Rebuild block chain index from current blk000??.dat files on startup
   -sysperms              Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)
@@ -171,7 +171,7 @@ Connection options:
   -proxy=<ip:port>       Connect through SOCKS5 proxy
   -seednode=<ip>         Connect to a node to retrieve peer addresses, and disconnect
   -timeout=<n>           Specify connection timeout in milliseconds (minimum: 1, default: 5000)
-  -upnp                  Use UPnP to map the listening port (default: 0)
+  -upnp                  Use UPnP to map the listening port (default: 1 when listening)
   -whitebind=<addr>      Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6
   -whitelist=<netmask>   Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.
                          Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway
