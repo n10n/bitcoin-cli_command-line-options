@@ -5,15 +5,15 @@
 ##
 
 # Run bitcoin-cli as a daemon
-#daemon=1
+daemon=1
 
 ## Network-related settings:
 
 # Have bitcoind discover available external ips to provide other nodes.
-#discover=1
+discover=1
 
 # Set the port which bitcoind will use to listen for incoming connections from other bitcoin nodes.
-#port=8333
+port=8333
 
 # Run on the test network instead of the real bitcoin network.
 #testnet=0
@@ -29,7 +29,7 @@
 
 # Bind to given address and always listen on it. Use [host]:port notation for IPv6
 # Bind to all available addresses with 0.0.0.0
-#bind=0.0.0.0
+bind=0.0.0.0
 #bind=<addr>
 
 # Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6
@@ -59,19 +59,21 @@
 ##############################################################
 
 # Use as many addnode= settings as you like to connect to specific peers.  Port is optional as needed.
-#addnode=69.164.218.197
-#addnode=10.0.0.2:8333
-#addnode=155.94.64.98:8333
-#addnode=93.188.224.253:8333
-#addnode=77.240.112.3:8333
-#addnode=31.146.211.3:8333
+addnode=69.61.29.79
+addnode=83.162.202.182
+addnode=80.100.203.186
+addnode=184.152.68.163
+addnode=93.188.224.253
+addnode=216.151.3.186
+addnode=91.230.200.134
+addnode=195.189.126.35
 
 # Alternatively use as many connect= settings as you like to connect ONLY to specific peers
-#connect=69.164.218.197
-#connect=10.0.0.1:8333
+#connect=93.188.224.25
+#connect=69.61.29.79:8333
 
 # Listening mode, enabled by default except when 'connect' is being used
-#listen=1
+listen=1
 
 # Maximum number of inbound+outbound connections.
 #maxconnections=120
@@ -81,7 +83,7 @@
 #
 
 # server=1 tells Bitcoin-QT and bitcoind to accept JSON-RPC commands
-#server=0
+server=0
 
 # Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6.
 # This option can be specified multiple times (default: bind to all interfaces)
@@ -132,10 +134,10 @@
 #limitfreerelay=15
 
 # Fees (in BTC/Kb) smaller than this are considered zero fee for relaying (default: 0.00001)
-#minrelaytxfee=0.001
+minrelaytxfee=0.001
 
 # Fees smaller than this are considered zero fee for transaction creation (default 0.00001)
-#mintxfee=0.001
+mintxfee=0.001
 
 # Transaction Fee Changes in 0.10.0
 
@@ -169,5 +171,11 @@
 # Minimize to the system tray
 #minimizetotray=1
 
+# Set maximum block size in bytes (default: 750000)
+blockmaxsize=1000000
 
+# Include IP addresses in debug output (default: 0)
+logips=0
 
+# Disable wallet functions (default: 0)
+#disablewallet=1
