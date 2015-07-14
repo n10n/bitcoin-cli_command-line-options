@@ -131,7 +131,7 @@ server=0
 # (and the default average is to allow about 150Kbytes over 10 minutes). 
 # limitfreerelay is KBytes/minute rate; default is 15.
 # <n> Continuously rate-limit free transactions to <n>*1000 bytes per minute (default:15)
-#limitfreerelay=15
+limitfreerelay=5
 
 # Fees (in BTC/Kb) smaller than this are considered zero fee for relaying (default: 0.00001)
 minrelaytxfee=0.001
@@ -173,6 +173,9 @@ mintxfee=0.001
 
 # Set maximum block size in bytes (default: 750000)
 blockmaxsize=1000000
+
+# Bytes in new blocks to allocate for free / high priority transactions (default: 50000)
+#blockprioritysize=0
 
 # Include IP addresses in debug output (default: 0)
 logips=0
